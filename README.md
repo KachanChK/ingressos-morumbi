@@ -9,5 +9,7 @@ O projeto contém a página inicial com os jogos separados pelos meses que vão 
 Melhorias futuras:
 
 Melhorar interface;
+
 Gerar pdf com ingresso do jogo;
+
 Enviar ingresso para o email do comprador.
