@@ -1,15 +1,53 @@
-# ingressos-morumbi
+# Ingressos Morumbi(s)
 
-Protótipo de uma aplicação para venda de ingressos nos totens do estádio do Morumbi.
+Protótipo de uma aplicação desktop para venda de ingressos nos totens do Estádio do Morumbi. O sistema permite visualizar jogos disponíveis, selecionar a quantidade de ingressos, informar os nomes dos compradores e escolher a forma de pagamento. Também possui uma área administrativa para cadastro e remoção de jogos.
 
-Tecnologias utilizadas: Python, Tkinter (Interface), SQL.
+## Tecnologias utilizadas
 
-O projeto contém a página inicial com os jogos separados pelos meses que vão ocorrer, após selecionar o jogo o usuário deve informar quantidade de ingressos, nome em cada ingresso e forma de pagamento. Também conta com área de administrador onde é gerenciar os jogos existente ou criar novos jogos, o acesso do administrador é restrito e deve ser cadastrado manualmente na base de dados. Ao inicializar a aplicação já irão existir jogos pré cadastrados.
+- Python
+- Tkinter
+- CustomTkinter
+- SQLite
 
-Melhorias futuras:
+## Como rodar o projeto
 
-Melhorar interface;
+### 1. Acesse a pasta do projeto
 
-Gerar pdf com ingresso do jogo;
+```powershell
+cd ingressos-morumbi
+```
 
-Enviar ingresso para o email do comprador.
+### 2. Crie o ambiente virtual
+
+```powershell
+python -m venv .venv
+```
+
+### 3. Ative o ambiente virtual
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 4. Instale as dependências
+
+```powershell
+python -m pip install customtkinter
+```
+
+### 5. Execute a aplicação
+
+```powershell
+python main.py
+```
+
+O projeto utiliza o arquivo `morumbi.db` como banco de dados SQLite local.
+
+## Acesso administrativo
+
+As credenciais de administrador definidas no código são:
+
+```text
+usuário: admin
+senha: 1234
+```
